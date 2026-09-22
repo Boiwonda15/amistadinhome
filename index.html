@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <script src="/javascript/fade.js"> </script>
+    <script src="/javascript/contact.js" defer></script>
+    <script src="/javascript/mobile-menu.js" defer></script>
+    <script src="/javascript/rainbow-loader.js" defer></script>
+    <title>Amistad</title>
+</head>
+<body>
+    <aside class="learning-sidebar" aria-label="Quick links">
+        <span class="sidebar-label">Learn</span>
+        <span class="learning-icon">📚</span>
+        <span class="learning-icon">✏️</span>
+        <span class="learning-icon">🎨</span>
+        <span class="learning-icon">🔤</span>
+        <a class="sidebar-link" href="/pages/enrollment.html">Enroll</a>
+        <a class="sidebar-link" href="/pages/credentials.html">Credentials</a>
+        <a class="sidebar-link" href="/pages/policies.html">Policies</a>
+        <a class="sidebar-link" href="/pages/contact.html">Contact</a>
+    </aside>
+    <header>
+        <nav>
+            <a class="logo" href="/index.html"><strong>Amistad In-Home Daycare!</strong></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+                <span class="menu-toggle-icon" aria-hidden="true"></span>
+                <span>Menu</span>
+            </button>
+            <div class="nav-links" id="site-navigation">
+                <a href ="#about">About</a>
+                <a href="/pages/curriculum.html">Curriculum</a>
+                <a href="/pages/credentials.html">Credentials</a>
+                <a href="/pages/enrollment.html">Enrollment</a>
+                <a href="/pages/policies.html">Policies</a>
+                <a href="/pages/contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-eyebrow">A loving place for little learners</p>
+            <h1>Warm, Family-Oriented Care</h1>
+            <p>Discover a safe, supportive home where your child can learn, play, and grow with confidence.</p>
+            <a href="/pages/enrollment.html" class="btn-enroll">Start Enrollment</a>
+        </div>
+
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="card">
+            <p>
+                Amistad provides bilingual in‑home childcare with a strong focus on 
+                emotional development, independence, and hands‑on learning. 
+                We believe children thrive when they feel supported, encouraged, and safe.
+            </p>
+        </div>
+    </section>
+    <section id="curriculum">
+        <h2>Curriculum</h2>
+        <div class="grid">
+            <div class="card1">
+              <h3>Creative Play</h3>
+          <p>Art, music, stories, and pretend play encourage imagination and self-expression.</p> 
+            </div>
+            <div class="card2">
+              <h3>Hands-On Learning</h3>
+          <p>Children explore language, numbers, shapes, sorting, and problem-solving through play.</p> 
+            </div>     
+             <div class="card3">
+              <h3>Movement and Outdoors</h3>
+          <p>Movement games and outdoor exploration build coordination, confidence, and curiosity.</p> 
+            </div>
+             <div class="card4">
+              <h3>Social Growth</h3>
+          <p>Children practice kindness, communication, sharing, and independence in a supportive setting.</p> 
+            </div>     
+        </div>
+    </section>
+    <section id="credentials">
+        <h2>Credentials</h2>
+        <div class="grid">
+            <div class="card1">
+                <h3>Experience</h3>
+                <p>Learn more about the experience and care behind Amistad.</p>
+            </div>
+            <div class="card2">
+                <h3>Safe Environment</h3>
+                <p>Children are supported in a clean, welcoming, and supervised home setting.</p>
+            </div>
+            <div class="card3">
+                <h3>Child Development</h3>
+                <p>Care is guided by age-appropriate activities that support growing skills.</p>
+            </div>
+            <div class="card4">
+                <h3>Family Partnership</h3>
+                <p>Families are kept informed and included in conversations about their child's care.</p>
+            </div>
+        </div>
+    </section>
+    <section id="enrollment">
+         <div class="card">
+            <p>Ready to learn more about care at Amistad? Share your family's needs, and we will help you take the next step toward enrollment.</p> 
+            <!-- <a class="btn" href="#"></a> -->
+            </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+           <p class="contact-intro">We would love to hear from you and learn how we can support your family. Reach out to schedule a conversation or ask any questions.</p>
+        <div class="grid">
+               <p><strong>Address:</strong><br>1001 Blue Stem Circle</p>
+               <p><strong>Phone:</strong><br>(402) 841-3428</p>
+              <p class="email-detail"><strong>Email:</strong><br>amistadinhome@gmail.com</p> 
+            </div>
+             <div class="card">
+                                    <h3 class="contact-card-heading">Start a Conversation</h3>
+                                      <p class="contact-form-intro">Have a question or want to learn more about care? Share your details below, and we will be in touch soon.</p>
+            <form class="contact-form" action="https://formsubmit.co/ajax/amistadinhome@gmail.com" method="post">
+                                <label for="home-contact-name">Your name</label>
+                <input id="home-contact-name" name="name" type="text" autocomplete="name" required>
+                                <label for="home-contact-email">Email address</label>
+                <input id="home-contact-email" name="email" type="email" autocomplete="email" required>
+                                <label for="home-contact-phone">Phone number</label>
+                <input id="home-contact-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(402) 555-0123" pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}" title="Please enter a phone number in this format: (402) 555-0123" required>
+                                <label for="home-contact-message">How can we help?</label>
+                <textarea id="home-contact-message" name="message" rows="6" required></textarea>
+                <button class="btn contact-submit" type="submit">Send</button>
+                <p class="form-status" role="status" aria-live="polite"></p>
+            </form> 
+            </div>
+        </div>
+
+    </section>
+    <footer class="site-footer">
+        <div class="footer-brand">Amistad In-Home Daycare&trade;</div>
+        <nav class="footer-links" aria-label="Footer navigation">
+            <a href="/index.html">Home</a>
+            <a href="/pages/curriculum.html">Curriculum</a>
+            <a href="/pages/credentials.html">Credentials</a>
+            <a href="/pages/enrollment.html">Enrollment</a>
+            <a href="/pages/policies.html">Policies</a>
+            <a href="/pages/contact.html">Contact</a>
+        </nav>
+        <p class="footer-date">2026</p>
+    </footer>
+</body>
+</html>

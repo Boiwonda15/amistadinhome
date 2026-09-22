@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <script src="/javascript/fade.js" defer></script>
+    <script src="/javascript/contact.js" defer></script>
+    <script src="/javascript/mobile-menu.js" defer></script>
+    <script src="/javascript/rainbow-loader.js" defer></script>
+    <title>Contact | Amistad In-Home Daycare</title>
+</head>
+<body class="contact-page">
+    <aside class="learning-sidebar contact-sidebar" aria-label="Contact shortcuts">
+        <span class="sidebar-label">Contact</span>
+        <span class="learning-icon">📞</span>
+        <span class="learning-icon">✉️</span>
+        <span class="learning-icon">📍</span>
+        <span class="learning-icon">💬</span>
+        <a class="sidebar-link" href="#message-form">Message</a>
+        <a class="sidebar-link" href="credentials.html">Credentials</a>
+    </aside>
+
+    <header>
+        <nav>
+            <a class="logo" href="../index.html"><strong>Amistad In-Home Daycare!</strong></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+                <span class="menu-toggle-icon" aria-hidden="true"></span>
+                <span>Menu</span>
+            </button>
+            <div class="nav-links" id="site-navigation">
+                <a href="../index.html#about">About</a>
+                <a href="curriculum.html">Curriculum</a>
+                <a href="credentials.html">Credentials</a>
+                <a href="enrollment.html">Enrollment</a>
+                <a href="policies.html">Policies</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-title">
+            <p class="hero-eyebrow">We are here to help</p>
+            <h1>Contact Amistad</h1>
+            <p>Have questions about care, enrollment, or our daily routines? We would love to hear from you.</p>
+        </div>
+
+        <section id="contact-details">
+            <h2>Get in Touch</h2>
+            <div class="grid">
+                <div class="card1">
+                    <h3>Visit Us</h3>
+                    <p>1001 Blue Stem Circle</p>
+                </div>
+                <div class="card2">
+                    <h3>Call Us</h3>
+                    <p>(402) 841-3428</p>
+                </div>
+                <div class="card3">
+                    <h3>Email Us</h3>
+                    <p class="email-detail">amistadinhome<wbr>@gmail.com</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="message-form">
+            <h2>Send a Message</h2>
+            <div class="card">
+                <form class="contact-form" action="https://formsubmit.co/ajax/amistadinhome@gmail.com" method="post">
+                    <label for="contact-name">Name</label>
+                    <input id="contact-name" name="name" type="text" autocomplete="name" required>
+
+                    <label for="contact-email">Email</label>
+                    <input id="contact-email" name="email" type="email" autocomplete="email" required>
+
+                    <label for="contact-phone">Phone</label>
+                    <input id="contact-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(402) 555-0123" pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}" title="Please enter a phone number in this format: (402) 555-0123" required>
+
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="message" rows="6" required></textarea>
+
+                    <button class="btn" type="submit">Send Message</button>
+                    <p class="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-brand">Amistad In-Home Daycare&trade;</div>
+        <nav class="footer-links" aria-label="Footer navigation">
+            <a href="../index.html">Home</a>
+            <a href="curriculum.html">Curriculum</a>
+            <a href="credentials.html">Credentials</a>
+            <a href="enrollment.html">Enrollment</a>
+            <a href="policies.html">Policies</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <p class="footer-date">2026</p>
+    </footer>
+</body>
+</html>

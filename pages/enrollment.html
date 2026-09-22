@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <script src="/javascript/fade.js"></script>
+    <script src="/javascript/enrollment.js" defer></script>
+    <script src="/javascript/mobile-menu.js" defer></script>
+    <script src="/javascript/rainbow-loader.js" defer></script>
+    <title>Enrollment | Amistad In-Home Daycare</title>
+</head>
+<body>
+    <aside class="learning-sidebar enrollment-sidebar" aria-label="Enrollment shortcuts">
+        <span class="sidebar-label">Enroll</span>
+        <span class="learning-icon">📝</span>
+        <span class="learning-icon">👨‍👩‍👧‍👦</span>
+        <span class="learning-icon">📞</span>
+        <span class="learning-icon">💳</span>
+        <a class="sidebar-link" href="#enrollment-form">Form</a>
+        <a class="sidebar-link" href="credentials.html">Credentials</a>
+        <a class="sidebar-link" href="policies.html">Policies</a>
+        <a class="sidebar-link" href="contact.html">Contact</a>
+    </aside>
+
+    <header>
+        <nav>
+            <a class="logo" href="../index.html"><strong>Amistad In-Home Daycare!</strong></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+                <span class="menu-toggle-icon" aria-hidden="true"></span>
+                <span>Menu</span>
+            </button>
+            <div class="nav-links" id="site-navigation">
+                <a href="../index.html#about">About</a>
+                <a href="curriculum.html">Curriculum</a>
+                <a href="credentials.html">Credentials</a>
+                <a href="enrollment.html">Enrollment</a>
+                <a href="policies.html">Policies</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-title">
+            <p class="hero-eyebrow">Let's get started</p>
+            <h1>Enrollment at Amistad</h1>
+            <p>Tell us about your family so we can learn how to support your child's care and learning.</p>
+        </div>
+
+        <section id="enrollment-form">
+            <h2>Family Information</h2>
+            <form class="enrollment-form" action="#" method="post">
+                <div class="form-grid">
+                    <div class="form-field-wide child-name-fields" id="child-name-fields">
+                        <label for="child-name-1">Child 1 name</label>
+                        <input id="child-name-1" name="child-name[]" type="text" required>
+                    </div>
+                    <div>
+                        <label for="parent-name">Parent or guardian name</label>
+                        <input id="parent-name" name="parent-name" type="text" required>
+                    </div>
+                    <div>
+                        <label for="child-age">Child's age</label>
+                        <input id="child-age" name="child-age" type="text" placeholder="Example: 3 years" required>
+                    </div>
+                    <div>
+                        <label for="number-of-children">Number of children enrolling</label>
+                        <select id="number-of-children" name="number-of-children" required>
+                            <option value="1">1 child</option>
+                            <option value="2">2 children</option>
+                            <option value="3">3 children</option>
+                            <option value="4">4 children</option>
+                            <option value="5">5 children</option>
+                            <option value="6">6 children</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="email">Email address</label>
+                        <input id="email" name="email" type="email" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone number</label>
+                        <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(402) 555-0123" pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}" title="Please enter a phone number in this format: (402) 555-0123" required>
+                    </div>
+                    <div class="form-field-wide">
+                        <label for="address">Home address</label>
+                        <input id="address" name="address" type="text" required>
+                    </div>
+                </div>
+
+                <fieldset>
+                    <legend>Will you receive third-party payment assistance?</legend>
+                    <label class="choice-label"><input type="radio" name="third-party-payment" value="yes" required> Yes</label>
+                    <label class="choice-label"><input type="radio" name="third-party-payment" value="no"> No</label>
+                    <label class="choice-label"><input type="radio" name="third-party-payment" value="unsure"> I am not sure</label>
+                </fieldset>
+
+                <label for="notes">Additional information</label>
+                <textarea id="notes" name="notes" rows="5" placeholder="Share anything helpful about your child's routines, needs, or interests."></textarea>
+
+                <button class="btn" type="submit">Submit Enrollment Request</button>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-brand">Amistad In-Home Daycare&trade;</div>
+        <nav class="footer-links" aria-label="Footer navigation">
+            <a href="../index.html">Home</a>
+            <a href="curriculum.html">Curriculum</a>
+            <a href="credentials.html">Credentials</a>
+            <a href="enrollment.html">Enrollment</a>
+            <a href="policies.html">Policies</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <p class="footer-date">2026</p>
+    </footer>
+</body>
+</html>
