@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  const phoneInput = form.querySelector('input[name="phone"]');
   const fields = form.querySelectorAll("input, textarea");
   const validationMessages = {
     email: "Please enter a valid email address, such as name@example.com.",
@@ -20,21 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
       field.setCustomValidity(validationMessages[field.name] || "Please complete this field.");
     });
     field.addEventListener("input", () => field.setCustomValidity(""));
-  });
-
-  phoneInput?.addEventListener("input", () => {
-    const digits = phoneInput.value.replace(/\D/g, "").slice(0, 10);
-    let formattedPhone = digits;
-
-    if (digits.length > 6) {
-      formattedPhone = `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
-    } else if (digits.length > 3) {
-      formattedPhone = `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
-    } else if (digits.length > 0) {
-      formattedPhone = `(${digits}`;
-    }
-
-    phoneInput.value = formattedPhone;
   });
 
   form.addEventListener("submit", async (event) => {
@@ -80,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
       status.textContent = "Thank you for your message. It has been sent to Amistad.";
       status.classList.remove("is-error");
       form.reset();
+      window.location.assign(form.dataset.successUrl);
     } catch (error) {
       status.textContent = `We could not send your message: ${error.message} Please try again, or call us at (402) 841-3428.`;
       status.classList.add("is-error");

@@ -956,3 +956,34 @@ input {
         transition: none;
     }
 }
+
+.thank-you-content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 62vh;
+    padding: 56px 24px;
+}
+
+.thank-you-card {
+    background: var(--color-white);
+    border: 3px solid var(--color-primary2);
+    border-radius: 16px;
+    box-shadow: 8px 8px 0 var(--color-secondary);
+    max-width: 680px;
+    padding: clamp(32px, 7vw, 72px);
+    text-align: center;
+}
+
+.thank-you-card h1 {
+    color: var(--color-border);
+    margin: 14px 0 18px;
+}
+
+.thank-you-card p:not(.hero-eyebrow) {
+    color: var(--color-text);
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin: 0 auto 28px;
+    max-width: 48ch;
+}
