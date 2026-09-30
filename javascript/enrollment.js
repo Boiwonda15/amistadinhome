@@ -1,4 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const availabilitySettings = {
+    infants: { available: false, slots: 0 },
+    toddlers: { available: true, slots: 1 }
+  };
+
+  document.querySelectorAll(".availability-card").forEach((card) => {
+    const ageGroup = card.dataset.ageGroup;
+    const settings = availabilitySettings[ageGroup];
+    const status = card.querySelector(".availability-status");
+    const spots = card.querySelector(".availability-spots");
+    const slotCount = Math.max(0, Number(settings?.slots) || 0);
+    const isAvailable = Boolean(settings?.available) && slotCount > 0;
+
+    card.classList.toggle("is-available", isAvailable);
+    card.classList.toggle("is-full", !isAvailable);
+    status.textContent = isAvailable ? "Available" : "Currently full";
+    spots.textContent = isAvailable ? `${slotCount} spots available` : "Join the interest list";
+  });
+
   const childCount = document.querySelector("#number-of-children");
   const childNameFields = document.querySelector("#child-name-fields");
 

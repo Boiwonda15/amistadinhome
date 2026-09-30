@@ -421,6 +421,14 @@ header nav {
     text-decoration: none;
 }
 
+.logo img {
+    display: block;
+    height: 100px;
+    max-width: min(420px, 100%);
+    object-fit: contain;
+    width: auto;
+}
+
 .nav-links {
     display: flex;
     flex-wrap: wrap;
@@ -802,6 +810,66 @@ h2 {
     background: #fff0f5;
 }
 
+.availability-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.availability-card {
+    background: #fff8d9;
+    border: 3px solid var(--color-border);
+    border-radius: 16px;
+    padding: 22px;
+}
+
+.availability-card.is-available {
+    background: #e9fbdc;
+    border-color: #4f8c32;
+}
+
+.availability-card.is-full {
+    background: #ffe5e5;
+    border-color: #a83f3f;
+}
+
+.availability-card h3 {
+    color: var(--color-border);
+    font-size: 1.55rem;
+    margin: 0 0 4px;
+}
+
+.availability-age,
+.availability-status,
+.availability-spots {
+    margin: 0;
+}
+
+.availability-age {
+    color: var(--color-text);
+    font-size: 1rem;
+}
+
+.availability-status {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-top: 18px;
+}
+
+.is-available .availability-status {
+    color: #397022;
+}
+
+.is-full .availability-status {
+    color: #8c2c2c;
+}
+
+.availability-spots {
+    color: var(--color-text);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 .grid {
     display: grid;
     gap: 20px;
@@ -1013,6 +1081,11 @@ input {
         max-width: calc(100% - 82px);
     }
 
+    .logo img {
+        height: 72px;
+        max-width: min(320px, 100%);
+    }
+
     .menu-toggle {
         display: inline-flex;
         flex-shrink: 0;
@@ -1146,6 +1219,7 @@ input {
     height: 100%;
     inset: 0;
     object-fit: cover;
+    object-position: center top;
     position: absolute;
     width: 100%;
     z-index: -2;
@@ -1190,11 +1264,12 @@ input {
 }
 
 .staff-preview-image {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 1 / 1;
     border: 2px solid var(--color-border);
     display: block;
     margin-bottom: 16px;
     object-fit: cover;
+    object-position: center top;
     width: 100%;
 }
 
