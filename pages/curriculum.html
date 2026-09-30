@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/main.css">
     <script src="../javascript/fade.js"></script>
     <script src="../javascript/mobile-menu.js" defer></script>
@@ -30,7 +33,13 @@
                 <span>Menu</span>
             </button>
             <div class="nav-links" id="site-navigation">
-                <a href="../index.html#about">About</a>
+                <details class="about-dropdown">
+                    <summary>About</summary>
+                    <div class="about-dropdown-menu">
+                        <a href="../index.html#about">About Amistad</a>
+                        <a href="staff.html">Meet the Staff</a>
+                    </div>
+                </details>
                 <a href="curriculum.html">Curriculum</a>
                 <a href="credentials.html">Credentials</a>
                 <a href="enrollment.html">Enrollment</a>
@@ -50,28 +59,58 @@
         <section id="schedule">
             <h2>Daily Schedule</h2>
             <div class="card">
-                <p>Each day balances welcoming routines, active play, quiet learning, meals, rest, and time outdoors. The schedule can be adjusted to support each child's needs and energy.</p>
+                <ol class="schedule-list">
+                    <li>Arrival</li>
+                    <li>Breakfast</li>
+                    <li>Free play</li>
+                    <li>Circle time</li>
+                    <li>Music and movement</li>
+                    <li>Snack</li>
+                    <li>Curriculum</li>
+                    <li>Outside time</li>
+                    <li>Lunch</li>
+                    <li>Quiet time</li>
+                    <li>Snack</li>
+                    <li>Circle time</li>
+                    <li>Free play</li>
+                    <li>Pick-up</li>
+                </ol>
             </div>
         </section>
 
-        <section id="activities">
-            <h2>Activities</h2>
+        <section id="domains">
+            <h2>Seven Ways Children Grow and Learn</h2>
+            <div class="card">
+                <p>We focus on the seven Early Learning domains of child development:</p>
+            </div>
             <div class="grid">
                 <div class="card1">
-                    <h3>Creative Play</h3>
-                    <p>Art, music, stories, and pretend play encourage imagination and self-expression.</p>
+                    <h3>Social and Emotional</h3>
+                    <p>Understanding and managing emotions, sharing, and developing a positive self-image.</p>
                 </div>
                 <div class="card2">
-                    <h3>Hands-On Learning</h3>
-                    <p>Children practice early language, numbers, shapes, sorting, and problem-solving through play.</p>
+                    <h3>Approaches to Learning</h3>
+                    <p>Focusing on curiosity, creativity, problem-solving, and experiencing new things.</p>
                 </div>
                 <div class="card3">
-                    <h3>Movement and Outdoors</h3>
-                    <p>Movement games and outdoor exploration help children build coordination and confidence.</p>
+                    <h3>Health and Physical Development</h3>
+                    <p>Developing gross and fine motor skills, coordination, and simple self-help habits.</p>
                 </div>
                 <div class="card4">
-                    <h3>Social Growth</h3>
-                    <p>Children learn kindness, sharing, communication, and independence in a supportive setting.</p>
+                    <h3>Language and Literacy</h3>
+                    <p>Enhancing listening, speaking, reading, and writing foundations in both English and Spanish.</p>
+                </div>
+                <div class="card1">
+                    <h3>Mathematics</h3>
+                    <p>Exploring numbers, patterns, spatial awareness, and counting.</p>
+                </div>
+                <div class="card2">
+                    <h3>Science</h3>
+                    <p>Learning reasoning and understanding through exploration of the natural and physical world.</p>
+                </div>
+                <div class="card3">
+                    <h3>Creative Arts</h3>
+                    <p>Expressing themselves through music, art, dance, and imaginative play.</p>
                 </div>
             </div>
         </section>

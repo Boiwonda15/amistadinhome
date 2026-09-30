@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <script src="javascript/fade.js"> </script>
     <script src="javascript/phone-format.js" defer></script>
@@ -31,7 +34,13 @@
                 <span>Menu</span>
             </button>
             <div class="nav-links" id="site-navigation">
-                <a href ="#about">About</a>
+                <details class="about-dropdown">
+                    <summary>About</summary>
+                    <div class="about-dropdown-menu">
+                        <a href="#about">About Amistad</a>
+                        <a href="pages/staff.html">Meet the Staff</a>
+                    </div>
+                </details>
                 <a href="pages/curriculum.html">Curriculum</a>
                 <a href="pages/credentials.html">Credentials</a>
                 <a href="pages/enrollment.html">Enrollment</a>
@@ -64,20 +73,20 @@
         <h2>Curriculum</h2>
         <div class="grid">
             <div class="card1">
-              <h3>Creative Play</h3>
-          <p>Art, music, stories, and pretend play encourage imagination and self-expression.</p> 
+              <h3>Daily Rhythm</h3>
+          <p>Children move through a balanced day of play, meals, learning, outdoor time, rest, and connection.</p>
             </div>
             <div class="card2">
-              <h3>Hands-On Learning</h3>
-          <p>Children explore language, numbers, shapes, sorting, and problem-solving through play.</p> 
+              <h3>Seven Learning Domains</h3>
+          <p>Our curriculum supports social-emotional growth, approaches to learning, health, language, math, science, and creative arts.</p>
             </div>     
              <div class="card3">
-              <h3>Movement and Outdoors</h3>
-          <p>Movement games and outdoor exploration build coordination, confidence, and curiosity.</p> 
+              <h3>Bilingual Foundations</h3>
+          <p>Children build listening, speaking, reading, and writing foundations in both English and Spanish.</p>
             </div>
              <div class="card4">
-              <h3>Social Growth</h3>
-          <p>Children practice kindness, communication, sharing, and independence in a supportive setting.</p> 
+              <h3>Learning Through Play</h3>
+          <p>Children explore numbers, patterns, nature, music, art, dance, and imaginative play.</p>
             </div>     
         </div>
     </section>
@@ -102,6 +111,24 @@
             </div>
         </div>
     </section>
+    <section id="staff">
+        <h2>Meet Our Staff</h2>
+        <div class="grid staff-directory">
+            <a class="card1" href="pages/marian.html">
+                <h3>Marian</h3>
+                <p>Owner and Head Teacher</p>
+            </a>
+            <a class="card2" href="pages/mami-lupe.html">
+                <h3>Mami Lupe</h3>
+                <p>Culinary Specialist</p>
+            </a>
+            <a class="card3" href="pages/alize.html">
+                <h3>Alize</h3>
+                <p>Teacher</p>
+            </a>
+        </div>
+        <a class="btn" href="pages/staff.html">Meet the Whole Team</a>
+    </section>
     <section id="enrollment">
          <div class="card">
             <p>Ready to learn more about care at Amistad? Share your family's needs, and we will help you take the next step toward enrollment.</p> 
@@ -112,7 +139,7 @@
         <h2>Contact Us</h2>
            <p class="contact-intro">We would love to hear from you and learn how we can support your family. Reach out to schedule a conversation or ask any questions.</p>
         <div class="grid">
-               <p><strong>Address:</strong><br>1001 Blue Stem Circle</p>
+               <p><strong>Location:</strong><br>Norfolk, NE 68701</p>
                <p><strong>Phone:</strong><br>(402) 841-3428</p>
               <p class="email-detail"><strong>Email:</strong><br>amistadinhome@gmail.com</p> 
             </div>
@@ -141,6 +168,7 @@
             <a href="index.html">Home</a>
             <a href="pages/curriculum.html">Curriculum</a>
             <a href="pages/credentials.html">Credentials</a>
+            <a href="pages/staff.html">Staff</a>
             <a href="pages/enrollment.html">Enrollment</a>
             <a href="pages/policies.html">Policies</a>
             <a href="pages/contact.html">Contact</a>
